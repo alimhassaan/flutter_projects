@@ -15,7 +15,7 @@ class _HomepageState extends State<Homepage> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blue[800],
           title: Text(
             "Ali's App ",
             style: TextStyle(
@@ -31,14 +31,12 @@ class _HomepageState extends State<Homepage> {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 30),
               child: MaterialButton(
-                color: Colors.blue,
+                color: Colors.blue[800],
                 textColor: Colors.white,
                 onPressed: () async {
-                  var response =  await get(
-                    Uri.parse("https://jsonplaceholder.typicode.com/posts"),
-                  );
-                  var responseBody = jsonDecode(response.body);
-                  print(responseBody);
+                  // var response =  await get(
+                  //   Uri.parse("https://jsonplaceholder.typicode.com/posts"),
+                  // );
                 },
                 child: Text("Http Request"),
               ),
