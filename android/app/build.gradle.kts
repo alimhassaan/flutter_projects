@@ -6,7 +6,6 @@ plugins {
     id("com.google.gms.google-services")
 }
 
-apply plugin: 'com.google.gms.google-services'
 android {
     namespace = "com.example.my_first_app"
     compileSdk = flutter.compileSdkVersion
