@@ -28,19 +28,9 @@ class _HomepageState extends State<Homepage> {
         ),
         body: ListView(
           children: [
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 30),
-              child: MaterialButton(
-                color: Colors.blue[800],
-                textColor: Colors.white,
-                onPressed: () async {
-                  // var response =  await get(
-                  //   Uri.parse("https://jsonplaceholder.typicode.com/posts"),
-                  // );
-                },
-                child: Text("Http Request"),
-              ),
-            ),
+
+            Text("Hello"),
+           
           ],
         ),
       ),
